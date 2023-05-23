@@ -1,0 +1,19 @@
+{% if weather_data %}
+    <h1>{{weather_data.city}}</h1>
+    <h2>{{weather_data.temperature}}</h2>
+    <p>{{weather_data.description}}</p>
+    <img src="http://openweathermap.org/img/w/{{weather_data.icon}}.png" alt="{{weather_data.description}}"
+{% endif %}
+{% if daily_forecast %}
+    <h2> 5 Day Forecast</h2>
+    <div class="forecast-container">
+        {% for x in daily_forecast %}
+            <div class="forecast">
+                <h3>{{x.day}}</h3>
+                <p>{{x.min_temp}} C {{x.max_temp}} C</p>
+                <p>{{x.description}}</p>
+                <img src="http://openweathermap.org/img/w/{{x.icon}}.png" alt="x.description">
+            </div>
+        {% endfor  %}
+    </div>
+{% endif %}

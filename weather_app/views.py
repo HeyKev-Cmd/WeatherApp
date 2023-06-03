@@ -3,17 +3,21 @@ import requests
 import datetime
 import os
 import logging
+from weather_project.settings import API_KEY
+from django.conf import settings
+import logging
 # endpoints
 # Create your views here.
 from weather_project.settings import BASE_DIR
 def index(request):
     # path=os.path.join(BASE_DIR, 'weather_app','API_KEY.txt')
     # API_KEY=open(path,"r").read()
+    
     current_weather_url="https://api.openweathermap.org/data/2.5/weather?q={}&appid={}"
     forecast_url="https://api.openweathermap.org/data/3.0/onecall?lat={}&lon={}&exclude=current,minutely,hourly,alerts&appid={}"
     # "https://api.openweathermap.org/data/2.5/forecast?lat={}&lon={}&appid={}"
     # "
-    
+    logging.warning('API_KEY='+API_KEY)
     if request.method=="POST":
         city1=request.POST['city1']
         # optional

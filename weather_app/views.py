@@ -7,7 +7,7 @@ import logging
 # Create your views here.
 from weather_project.settings import BASE_DIR
 def index(request):
-    path=os.path.join(BASE_DIR, 'weather_app\API_KEY.txt')
+    path=os.path.join(BASE_DIR, 'weather_app','API_KEY.txt')
     API_KEY=open(path,"r").read()
     current_weather_url="https://api.openweathermap.org/data/2.5/weather?q={}&appid={}"
     forecast_url="https://api.openweathermap.org/data/3.0/onecall?lat={}&lon={}&exclude=current,minutely,hourly,alerts&appid={}"

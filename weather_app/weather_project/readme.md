@@ -6,7 +6,15 @@
 <h3 align="left">A side project made by Kevin, using Open Weather onecall API v3 </h3>
 <h3 align="left">Usage: Enter one or two city name and get the weather comparison is celsius  </h3>
 </p>
-<title>Result<title>
+
+<h3 align="left">Result</h3>
+
+![city1](https://github.com/HeyKev-Cmd/WeatherApp/assets/70830668/1537d70f-faa0-4044-9236-7d4fff9587b9)
+
+![city2](https://github.com/HeyKev-Cmd/WeatherApp/assets/70830668/89ba5a42-7f60-417b-b3b0-14b9c7aed292)
+
+
+
 
 <h3 align="left">Connect with me:https://www.linkedin.com/in/kevin-chou-1996umd/</h3>
 

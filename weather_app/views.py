@@ -16,7 +16,6 @@ def index(request):
     forecast_url="https://api.openweathermap.org/data/3.0/onecall?lat={}&lon={}&exclude=current,minutely,hourly,alerts&appid={}"
     # "https://api.openweathermap.org/data/2.5/forecast?lat={}&lon={}&appid={}"
     # "
-    logging.warning('API_KEY='+ str(API_KEY)   )
     if request.method=="POST":
         city1=request.POST['city1']
         # optional
